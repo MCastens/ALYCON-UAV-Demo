@@ -1,0 +1,15 @@
+{
+  "total_flights": 46,
+  "fault_flights": 36,
+  "normal_flights": 10,
+  "avg_H_change": 1.39,
+  "avg_F_change": 35.9,
+  "avg_W_change": 15.3,
+  "avg_centroid_dist": 2.42,
+  "p_value_separation": "1e-50",
+  "effect_size_H": 2.03,
+  "confusion_matrix": [[36, 0], [0, 10]],
+  "roc_auc": 1.0,
+  "source": "ALFA Dataset (Keipour et al., 2021)",
+  "doi": "10.1177/0278364920966642"
+}

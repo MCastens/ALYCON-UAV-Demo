@@ -1,0 +1,73 @@
+================================================================================
+GIT REPOSITORY SETUP - ALYCON UAV DEMO
+================================================================================
+
+STEP 1: Initialize Local Repository
+------------------------------------
+cd c:\Users\m_cas\Alycon\ALYCON-UAV-Demo
+git init
+git add .
+git commit -m "Initial commit: ALYCON UAV anomaly detection validation results - 98.2% detection rate"
+
+
+STEP 2: Create GitHub Repository
+---------------------------------
+1. Go to: https://github.com/new
+2. Repository name: ALYCON-UAV-Demo
+3. Description: Training-free UAV anomaly detection - 98.2% detection, 3.9s latency
+4. Public repository
+5. DO NOT initialize with README (we already have one)
+6. Click "Create repository"
+
+
+STEP 3: Link and Push to GitHub
+--------------------------------
+git remote add origin https://github.com/MCastens/ALYCON-UAV-Demo.git
+git branch -M main
+git push -u origin main
+
+
+STEP 4: Verify Upload
+---------------------
+Open in browser: https://github.com/MCastens/ALYCON-UAV-Demo
+
+Expected files:
+- README.md (project overview, results table)
+- citations/DATA_SOURCES.md (academic references)
+- reproducibility/RUNBOOK.md (validation methodology)
+- results/*.json (validation outputs)
+- figures/*.png (phase space visualizations)
+
+
+STEP 5: Repository Link for LinkedIn
+-------------------------------------
+GitHub URL: https://github.com/MCastens/ALYCON-UAV-Demo
+
+Use this in your LinkedIn post as evidence repository for technical evaluators.
+
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+If remote already exists:
+git remote remove origin
+git remote add origin https://github.com/MCastens/ALYCON-UAV-Demo.git
+
+If push fails (auth):
+Use GitHub Personal Access Token instead of password
+Settings → Developer settings → Personal access tokens → Generate new token
+
+
+================================================================================
+POST-UPLOAD CHECKLIST
+================================================================================
+[ ] README displays correctly on GitHub
+[ ] All 3 JSON result files present in results/
+[ ] All 3 PNG figures present in figures/
+[ ] Citations page shows DOI links
+[ ] Repository is Public (not Private)
+[ ] Topics added: drone-security, anomaly-detection, information-geometry, uav
+
+
+================================================================================

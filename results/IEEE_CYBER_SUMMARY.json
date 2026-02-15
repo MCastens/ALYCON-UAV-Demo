@@ -1,0 +1,14 @@
+{
+  "total_samples": 33102,
+  "benign": 9425,
+  "dos": 11671,
+  "replay": 12006,
+  "best_feature": "frame.len",
+  "f1_score": 0.953,
+  "precision": 0.9246,
+  "recall": 0.983,
+  "accuracy": 0.9283,
+  "p_value": "1e-20",
+  "source": "IEEE T-ITS UAV Dataset (Hassler et al., 2024)",
+  "doi": "10.21227/6f22-py65"
+}

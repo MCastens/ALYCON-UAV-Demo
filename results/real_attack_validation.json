@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "timestamp": "2026-02-13T16:10:37.023266",
+    "framework": "ALYCON v5.0",
+    "validation_type": "REAL adversarial attacks (no synthetic injection)",
+    "datasets": [
+      "AV-GPS Dataset",
+      "UAV Cyberattacks"
+    ]
+  },
+  "summary": {
+    "total_tests": 5,
+    "detected": 5,
+    "detection_rate": 1.0,
+    "avg_latency_s": 26.4966,
+    "avg_compute_ms": 4476.318407058716
+  },
+  "results": [
+    {
+      "dataset": "AV-GPS Dataset",
+      "attack_type": "GPS Spoofing",
+      "signal": "GPS Latitude",
+      "detected": true,
+      "latency_s": 56.6,
+      "false_alerts": 0,
+      "compute_ms": 6632.821559906006
+    },
+    {
+      "dataset": "AV-GPS Dataset",
+      "attack_type": "GPS Spoofing (velocity)",
+      "signal": "Velocity",
+      "detected": true,
+      "latency_s": 39.1,
+      "false_alerts": 0,
+      "compute_ms": 6632.821559906006
+    },
+    {
+      "dataset": "AV-GPS Dataset",
+      "attack_type": "GPS Spoofing (heading)",
+      "signal": "Heading",
+      "detected": true,
+      "latency_s": 36.6,
+      "false_alerts": 0,
+      "compute_ms": 6632.821559906006
+    },
+    {
+      "dataset": "UAV Cyberattacks",
+      "attack_type": "DoS attack",
+      "signal": "network_timing",
+      "detected": true,
+      "latency_s": 0.009000000000000001,
+      "false_alerts": 301,
+      "compute_ms": 1159.4369411468506
+    },
+    {
+      "dataset": "UAV Cyberattacks",
+      "attack_type": "Replay",
+      "signal": "network_timing",
+      "detected": true,
+      "latency_s": 0.17400000000000002,
+      "false_alerts": 41,
+      "compute_ms": 1323.690414428711
+    }
+  ]
+}
