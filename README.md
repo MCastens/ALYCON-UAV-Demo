@@ -24,6 +24,24 @@ Training-free information-geometric anomaly detection for UAV telemetry.
 
 See [`results/`](results/) for complete JSON outputs.
 
+### Example Result Record
+```json
+{
+  "dataset": "AV-GPS Dataset",
+  "attack_type": "GPS Spoofing",
+  "signal": "GPS Latitude",
+  "detected": true,
+  "latency_s": 56.6,
+  "false_alerts": 0,
+  "compute_ms": 6632.8
+}
+```
+
+**Available Result Files:**
+- [`real_attack_validation.json`](results/real_attack_validation.json) - 5 real attack scenarios (100% detected)
+- [`ALFA_ALYCON_SUMMARY.json`](results/ALFA_ALYCON_SUMMARY.json) - 47 CMU ALFA flights
+- [`IEEE_CYBER_SUMMARY.json`](results/IEEE_CYBER_SUMMARY.json) - 33,102 cyber samples
+
 ---
 
 ## Datasets
@@ -103,11 +121,17 @@ Full citations: [`citations/DATA_SOURCES.md`](citations/DATA_SOURCES.md)
 
 ## Figures
 
-Phase space visualization showing geometric separation between normal flight and attack states:
+### Phase Space Geometry - Engine Failure Detection
+![ALFA Phase Space](figures/ALFA_phase_space_engine_failure.png)
+*3D phase space showing geometric clustering of normal vs fault states*
 
-![Phase Space Detection](figures/phase_space_detection.png)
+### Normal vs Fault Separation
+![Fault Scatter](figures/ALFA_fault_vs_normal_scatter.png)
+*Clear geometric separation between 11 normal flights (blue) and 36 fault scenarios (red)*
 
-See [`figures/`](figures/) directory for additional visualizations.
+### Comparison to Published Baseline
+![Comparison](figures/qu_comparison_phase_space.png)
+*ALYCON geometric detection vs published research methods*
 
 ---
 
