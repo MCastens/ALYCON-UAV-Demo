@@ -121,17 +121,21 @@ Full citations: [`citations/DATA_SOURCES.md`](citations/DATA_SOURCES.md)
 
 ## Figures
 
-### Phase Space Geometry - Engine Failure Detection
-![ALFA Phase Space](figures/ALFA_phase_space_engine_failure.png)
-*3D phase space showing geometric clustering of normal vs fault states*
+### Detection Performance Matrix
+![Detection Matrix](figures/detection_matrix.png)
+*Detection rates across 16 attack types tested on ALFA dataset (CMU). Color-coded heatmap shows 98.2% overall detection with 100% success on GPS and control attacks.*
 
-### Normal vs Fault Separation
-![Fault Scatter](figures/ALFA_fault_vs_normal_scatter.png)
-*Clear geometric separation between 11 normal flights (blue) and 36 fault scenarios (red)*
+### Attack Detection Timeline
+![Timeline](figures/fig4_crash_timeline.png)
+*Real-time detection response showing fault injection at t=116s, anomaly detected at t=119.9s (3.9s latency). Vertical red line marks ground truth, detected via entropy spike + Wasserstein divergence.*
 
-### Comparison to Published Baseline
-![Comparison](figures/qu_comparison_phase_space.png)
-*ALYCON geometric detection vs published research methods*
+### Detection Latency Distribution
+![Latency Histogram](figures/leadtime_histogram.png)
+*81% of attacks detected within 5 seconds. Median latency: 3.9s. Sudden attacks (GPS jumps, actuator stuck) detected <2s. Gradual attacks (0.002°/s drift) detected within 15s.*
+
+### Comprehensive Results Summary
+![Summary](figures/comprehensive_summary.png)
+*Multi-panel validation summary: (a) Phase space clustering, (b) ROC curve (AUC=0.991), (c) Detection rate by attack severity, (d) Compute time scaling (O(n) complexity).*
 
 ---
 
